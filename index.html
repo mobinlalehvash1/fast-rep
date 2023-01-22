@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Without Lodash</title>
+  </head>
+
+  <body>
+    <div class="todo-list">
+      <div class="container">
+        <div class="add-todo">
+          <h4>Add New Todo...</h4>
+          <input type="text" id="todo-input" placeholder="Add Todo Here..." />
+          <p id="error"></p>
+        </div>
+        <ul id="all-list" style="padding: 2rem 0;">
+          <li class="item-list">
+            <span>Amin</span>
+            <i class="fa fa-trash-o delete trashBin"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- myChart1 -->
+    
+    <section class="section section1">
+      <canvas id="myChart1" width="1000" height="420"></canvas>
+    </section>
+    
+    <!-- myChart2 -->
+
+    <section class="section section2">
+      <canvas id="myChart2" width="1000" height="420"></canvas>
+    </section>
+
+    <!-- myChart3 -->
+
+    <section class="section section3">
+      <canvas id="myChart3" width="1000" height="420"></canvas>
+    </section>
+
+    <!-- myChart4 -->
+
+    <section class="section section4">
+      <canvas id="myChart4" width="1000" height="420"></canvas>
+    </section>
+
+    <!-- myChart5 -->
+
+    <div class="section5-container">
+    <section class="section section5">
+      <canvas id="myChart5" width="1000" height="420"></canvas>
+    </section>
+    </div>
+
+    <div id="editor-parent">
+      <div id="editor"></div>
+      <button id="editor-button">fetch data</button>
+    </div>
+
+    <div id="editor-fetch-data"></div>
+
+    <!-- ---------- client js (html code) ---------- -->
+
+    <!-- <div class="my-info">
+
+      <h2 class="my-browser">My Browser : </h2>
+      <h2 class="is-chrome">Is Chrome : </h2>
+      <h2 class="is-firefox">Is Firefox : </h2>
+
+      <h2 class="my-os">My OS : </h2>
+      <h2 class="is-windows">Is Windows : </h2>
+      <h2 class="is-mobile">Is Mobile : </h2>
+
+      <h2 class="is-local-storage">Is Local Storage : </h2>
+      <h2 class="my-language">My Language : </h2>
+      <h2 class="my-time-zone">My Time Zone : </h2>
+
+    </div> -->
+
+    <section id="picures-containers">
+      <div style="background-image: url(pictures/service-1.jpg);"></div>
+      <div style="background-image: url(pictures/service-2_gallery_4.jpg);"></div>
+      <div style="background-image: url(pictures/service-3.jpg);"></div>
+      <div style="background-image: url(pictures/service-4.jpg);"></div>
+      <div style="background-image: url(pictures/service-5.jpg);"></div>
+      <div style="background-image: url(pictures/service-6_gallery5.jpg);"></div>
+    </section>
+
+    <!-- ---------- client js ---------- -->
+
+    <script src="js/client.min.js"></script>
+
+    <!-- ---------- ckeditor5 ---------- -->
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/inline/ckeditor.js"></script> -->
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/decoupled-document/ckeditor.js"></script> -->
+
+    <!-- ---------- Chart js ---------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- ---------- main js file ---------- -->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

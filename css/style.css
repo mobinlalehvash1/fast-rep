@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazirmatn-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "vazirBold";
+    src: url("../fonts/Vazirmatn-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: vazir;
+}
+
+body {
+    /* color: #fff; */
+    /* background: linear-gradient(to right, #202025, #1a182b, #110f20); */
+    background-color: rgb(230, 230, 230);
+    
+    /* background-color: rgb(255, 153, 236); */
+    /* background-image: radial-gradient(at 7% 86%, rgb(151, 192, 242) 0px, transparent 50%), radial-gradient(at 87% 43%, rgb(10, 243, 255) 0px, transparent 50%), radial-gradient(at 18% 27%, rgb(255, 137, 10) 0px, transparent 50%), radial-gradient(at 43% 90%, rgb(173, 10, 255) 0px, transparent 50%), radial-gradient(at 69% 68%, rgb(222, 10, 255) 0px, transparent 50%), radial-gradient(at 33% 74%, rgb(10, 255, 141) 0px, transparent 50%), radial-gradient(at 50% 35%, rgb(255, 10, 71) 0px, transparent 50%), radial-gradient(at 62% 74%, rgb(35, 255, 10) 0px, transparent 50%); */
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo-list {
+    padding: 8% 2% 2%;
+    margin: auto;
+    width: 350px;
+    /* min-height: 100vh; */
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 7%;
+}
+
+li {
+    background-color: #372f8d;
+    padding: 10px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+li span {
+    font-size: 12px;
+}
+
+.add-todo {
+    text-align: center;
+}
+
+.add-todo input {
+    margin-top: 8px;
+    width: 90%;
+    padding: 7px;
+    outline: 0;
+    background-color: #24243e;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+i {
+    cursor: pointer;
+}
+i:hover{
+  color:red;
+}
+
+.section{
+    width: 60%;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.section1{
+    background-color: rgb(33, 34, 43);
+    border: none;
+}
+.section2{
+    background-color: rgb(230, 230, 230);
+    border: 2px solid gray;
+}
+.section3{
+    background-color: rgb(20, 20, 20);
+    border: none;
+}
+.section4{
+    border: 2px solid rgba(86, 76, 229, 0.5);
+}
+.section5-container{
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    /* background-color: rgb(71, 71, 71); */
+}
+.section5{
+    border: 2px solid gray;
+    height: 400px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .section{
+        width: 95%;
+    }
+    .section5-container{
+        width: 95%;
+    }
+    .section5{
+        height: 300px;
+    }
+}
+
+#editor-parent{
+    width: 60%;
+    margin: 2rem auto;
+}
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 200px;
+    background-color: rgb(36, 38, 49) !important;
+    color: rgb(230, 230, 230) !important;
+}
+.ck-content .image {
+    /* block images */
+    max-width: 80%;
+    margin: 20px auto;
+}
+.ck-toolbar_grouping{
+    background-color: rgb(25, 25, 34) !important;
+}
+.ck-toolbar_grouping span, .ck-toolbar_grouping svg{
+    color: #fff !important;
+}
+#editor-button{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: rgb(36, 38, 49);
+    color: rgb(230, 230, 230);
+    border: 0;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+/* --------------- my comment --------------- */
+
+/* ==============================
+            my comment
+============================== */
+
+#editor-fetch-data{
+    direction: rtl;
+    width: 90%;
+    background-color: rgb(35, 36, 46);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+#editor-fetch-data h2{
+    font-family: tahoma;
+    color: rgb(240, 240, 240);
+    font-size: 2rem;
+}
+#editor-fetch-data p {
+    color: rgb(212, 212, 212);
+    font-size: 1.05rem;
+}
+#editor-fetch-data a{
+    color: rgb(159, 226, 71);
+    margin: 0 .25rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+#editor-fetch-data blockquote{
+    font-weight: bold;
+    border-right: 4px solid rgb(159, 226, 71);
+    background-color: rgb(31, 31, 31);
+    padding: 1rem;
+}
+
+.my-info{
+    padding: 1rem;
+}
+.my-info h2{
+    font-family: vazirBold;
+    padding: 1rem;
+    border: 2px solid rgb(199, 199, 199);
+    margin: .5rem 0;
+    color: rgb(20, 20, 20);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+#picures-containers{
+    width: 90%;
+    min-height: 500px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: rgb(36, 37, 43);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+    "one one one one two two two two two two"
+    "three three three three two two two two two two"
+    "six six six six six six four four four four"
+    "six six six six six six five five five five";
+    grid-gap: 1.25rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+#picures-containers div{
+    background-color: rgb(42, 44, 56);
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: .325s;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-transition: .325s;
+    -moz-transition: .325s;
+    -ms-transition: .325s;
+    -o-transition: .325s;
+}
+#picures-containers div:hover{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+#picures-containers div:nth-child(1){
+    grid-area: one;
+}
+#picures-containers div:nth-child(2){
+    grid-area: two;
+}
+#picures-containers div:nth-child(3){
+    grid-area: three;
+}
+#picures-containers div:nth-child(4){
+    grid-area: four;
+}
+#picures-containers div:nth-child(5){
+    grid-area: five;
+}
+#picures-containers div:nth-child(6){
+    grid-area: six;
+}
+@media screen and (max-width: 768px){
+    #picures-containers{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+        grid-gap: 1rem;
+    }
+    #picures-containers div{
+        background-color: rgb(42, 44, 56);
+        min-height: 230px;
+    }
+}
